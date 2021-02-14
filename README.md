@@ -63,3 +63,10 @@
 2. using next()
 3. 3rd party middleware
 4. statis files
+
+#### MongoDB
+1. Intro to mongodb
+2. mongodb setup with atlas
+3. mongoose
+4. getting & save data
+5. outputting documents in views
