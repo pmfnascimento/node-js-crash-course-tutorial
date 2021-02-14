@@ -76,3 +76,8 @@
 2. post requests
 3. route parameters
 4. delete requests
+
+#### Express Router & MVC
+1. express router
+2. mvc basics
+3. controllers
