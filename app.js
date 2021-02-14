@@ -2,6 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const Blog = require("./models/blog");
+const { render } = require("ejs");
 
 
 // express app
@@ -24,7 +25,7 @@ app.set("view engine", "ejs");
 // middleware & statics files
 app.use(express.static('public'))
 app.use(morgan("dev"));
-
+app.use(express.urlencoded({ extended: true }));
 // moongose and mongo sandbox routes
 // app.get('/add-blog', (req, res) => {
 //     const blog = new Blog({
@@ -94,6 +95,41 @@ app.get("/blogs", (req, res) => {
             console.log(err);
         });
 });
+
+app.get("/blogs/:id", (req, res) => {
+  const id = req.params.id;
+  Blog.findById(id)
+    .then((result) => {
+      res.render("details", { title: "Details Blog", blog: result });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
+app.delete("/blogs/:id", (req, res) => {
+  const id = req.params.id;
+  Blog.findByIdAndDelete(id)
+    .then((result) => {
+      res.json({ redirect: "/blogs" });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
+app.post("/blogs", (req, res) => {
+  const blog = new Blog(req.body);
+  blog
+    .save()
+    .then((result) => {
+      res.redirect("/blogs");
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
 app.get("/blogs/create", (req, res) => {
   res.render("create", { title: "Create Blog" });
 });

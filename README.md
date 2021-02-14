@@ -70,3 +70,9 @@
 3. mongoose
 4. getting & save data
 5. outputting documents in views
+
+#### Get, Post & Delete Requests
+1. requsts types
+2. post requests
+3. route parameters
+4. delete requests
