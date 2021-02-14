@@ -2,28 +2,18 @@
 
 #### What is Node.js
 
-<<<<<<< HEAD
-#### Front-end
----- JS
+##### - Front-end ---- js
 
-#### Back-end
----- JS|NODE.js
-=======
-## Front-end
-## ---- JS<br>
+##### - Back-end ---- js / node.js
 
-## Back-end
-## ---- JS   |   NODE.js<br>
->>>>>>> 6538364459fb3d0bdd78424a1cbbe19e028a5d37
+##### - V8 compiles Javascript into machine code
 
-## V8 compiles Javascript into machine code
+##### - Node.js is written in C++
 
-## Node.js is written in C++
-
-## JS --- NODE.JS --- Machine code
+##### - js --- node.js --- Machine code
 
 #### Features
-1. Read & write files ona a computer<br>
+1. Read & write files on a computer<br>
 2. Connect a database<br>
 3. Act as a server for code<br>
 
