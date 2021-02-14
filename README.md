@@ -57,3 +57,9 @@
 2. Passing data into Views
 3. Partials
 4. Adding CSS
+
+#### Middleware & Static Files
+1. What is a middleware
+2. using next()
+3. 3rd party middleware
+4. statis files
