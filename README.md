@@ -2,11 +2,19 @@
 
 #### What is Node.js
 
+<<<<<<< HEAD
 #### Front-end
 ---- JS
 
 #### Back-end
 ---- JS|NODE.js
+=======
+## Front-end
+## ---- JS<br>
+
+## Back-end
+## ---- JS   |   NODE.js<br>
+>>>>>>> 6538364459fb3d0bdd78424a1cbbe19e028a5d37
 
 ## V8 compiles Javascript into machine code
 
